@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="./CSS/ctyle.css">
+</head>
+
+<body>
+    <div class="div--app">
+        <div class="user--app">
+            <form id="form--user">
+                <div class="form__div--user">
+                    <label for="fullName">FullName:</label>
+                    <input type="text" name="fullName" id="fullName" value="" placeholder="FullName">
+                </div>
+    
+                <div class="form__div--user">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" value="" placeholder="Email">
+                </div>
+    
+                <div class="form__div--user">
+                    <label for="phoneNumber">PhoneNumber:</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" value="" placeholder="PhoneNumber">
+                </div>
+    
+                <div class="form__div--user">
+                    <label for="email">Age:</label>
+                    <input type="date" name="age" id="age" value="">
+                </div>
+    
+                <div class="form__div--user">
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                </div>
+    
+                <div class="form__div--user">
+                    <label for="hobbies">Hobbies:</label>
+                    <select name="hobbies" id="hobbies">
+                        <option value="nghe nhạc">Nghe nhạc</option>
+                        <option value="ăn uống">Ăn uống</option>
+                        <option value="học bài">Học bài</option>
+                        <option value="đá bóng">Đá bóng</option>
+                    </select>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+
+        <table>
+            <tr class="tr--user">
+                <td>FullName</td>
+                <td>Email</td>
+                <td>PhoneNumber</td>
+                <td>Age</td>
+                <td>Gender</td>
+                <td>Hobbies</td>
+            </tr>
+            <tbody id="list__UserPrint"></tbody>
+        </table>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>

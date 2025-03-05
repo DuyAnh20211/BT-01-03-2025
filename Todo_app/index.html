@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiêu đề công việc</title>
+    <link rel="stylesheet" href="./CSS/ctyle.css">
+</head>
+
+<body>
+    <div class="div--app">
+        <div class="todo--app">
+            <form id="form--User">
+                <div class="form__user--user">
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title" value="" placeholder="Tiêu đề công việc">
+                </div>
+    
+                <div class="form__user--user">
+                    <label for="starDate">StarDate:</label>
+                    <input type="date" name="starDate" id="starDate" value="">
+                </div>
+    
+                <div class="form__user--user">
+                    <label for="endDate">EndDate:</label>
+                    <input type="date" name="endDate" id="endDate" value="">
+                </div>
+                
+                <div class="form__user--user">
+                <select name="jobType" id="jobType">
+                    <option value="Học tập">Học tập</option>
+                    <option value="Làm Việc">Làm Việc</option>
+                    <option value="Vui Chơi">Vui Chơi</option>
+                </select>
+                </div>
+    
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        <table>
+            <tr class="tr--user">
+                <td>Title</td>
+                <td>StarDate</td>
+                <td>EndDate </td>
+                <td>JobType</td>
+            </tr>
+            <tbody id="listUserPrint"></tbody>
+        </table>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
