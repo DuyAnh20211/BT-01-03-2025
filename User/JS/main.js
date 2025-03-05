@@ -1,7 +1,7 @@
 const listUser = [];
 const listUserInput = ["fullName", "email", "phoneNumber", "age", "gender" ,"hobbies"];
 const data = {};
-document.getElementById("submit").addEventListener("click", event => {
+document.getElementById("form--user").addEventListener("submit", event => {
 event.preventDefault();
 listUserInput.forEach(id => {
     data[id] = document.getElementById(id).value;

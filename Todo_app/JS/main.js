@@ -1,7 +1,7 @@
 const listUser=[];
 const listUserInput=["title", "starDate", "endDate", "jobType"];
 const data = {};
-document.getElementById("submit").addEventListener("click", (event) => {
+document.getElementById("form--User").addEventListener("submit", (event) => {
     event.preventDefault();
     listUserInput.forEach(id => {
         data[id]=document.getElementById(id).value;
